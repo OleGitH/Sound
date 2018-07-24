@@ -1,0 +1,126 @@
+.block-container
+  max-width: 971px
+  margin: 0 auto
+  overflow: hidden
+
+.block2__contacts__elem
+  color: #fff
+  font-family: robotoMedium
+  font-size: 16px
+  font-weight: 500
+  line-height: 24px
+  transition: .4s
+  &:hover
+    color: lighten(#e67e22, 15%)
+  &:before
+    content: url("img/icons/phone.svg")
+    margin-right: 4px
+
+.block2__contacts__elem1
+  width: 40px
+  height: 40px
+  margin-left: 59px
+  position: relative
+  border: 1px solid white
+  border-radius: 50%
+  transition: .4s
+  &:hover
+    background: #e67e22
+  &:before
+    position: absolute
+    content: url("img/icons/facebook.svg")
+    width: 35px
+    height: 35px
+    top: 8px
+    left: 12px
+
+.block__header
+  display: flex
+  align-items: center
+  color: #000000
+  font-family: roboto
+  font-size: 30px
+  font-weight: 500
+  line-height: 28px
+  margin-bottom: 39px
+  &:before
+    content: ''
+    width: 26px
+    height: 2px
+    background-color: $Base_gold
+    margin-right: 18px
+//slider ranger style
+.slider-container
+  margin: 10px auto 0
+.theme-blue .back-bar .pointer
+  background: url("img/icons/range.svg") no-repeat 50%
+  width: 17px
+  height: 17px
+
+.theme-blue .back-bar .selected-bar
+  background: transparent
+.slider-container .back-bar .pointer-label
+  color: #000000
+  font-family: roboto
+  font-size: 12px
+  font-weight: 400
+  line-height: 28px
+  top: -30px
+  background: transparent
+  &:after
+    content: 'мин'
+    margin-left: 4px
+.slider-container .scale span:last-of-type ins
+  &:before
+    content: '>'
+    margin-right: 5px
+  &:after
+    content: 'мин'
+    margin-left: 5px
+
+.slider-container .clickable-dummy
+  background: white
+  height: 8px
+  border-radius: 5px
+  border: 1px solid #bebebe
+  @media (max-width: 1024px)
+    cursor: default
+
+// select2
+.select2-container--default .select2-selection--single
+  padding: 13px 13px
+.select2-container .select2-selection--single
+  height: unset
+.select2-container--default .select2-selection--single .select2-selection__arrow b
+  border-color: #000 transparent transparent !important
+  border-style: solid !important
+  border-width: 9px !important
+  position: relative
+  height: 0
+  width: 0
+  display: block
+  margin: -2px 0 0
+  left: -11px
+  top: 23px
+  &:before
+   border-color: #f7f7f7 transparent transparent !important
+   border-style: solid !important
+   border-width: 8px !important
+   position: absolute
+   height: 0
+   width: 0
+   left: -8px
+   top: -11px
+   content: ''
+
+.select2-container
+  width: unset !important
+// swiper
+.swiper-pagination-bullet
+  margin-right: 7px
+  background: transparent
+  border: 1px solid orange
+  opacity: 1
+  outline: none
+.swiper-pagination-bullet-active
+  background: #e67e22

@@ -1,0 +1,308 @@
+@import "bourbon"
+@import "sass/vars"
+@import "sass/base"
+@import "sass/mixins"
+
+@import "sass/susy/sass/susy"
+
+@import "sass/elements"
+
+header
+  background-color: $Base-blue
+  .mobile_nav
+    position: absolute
+    right: 0
+    top: 10px
+    display: flex
+    align-items: center
+    a
+      margin-left: 0
+      &:nth-of-type(2)
+        margin-left: 15px
+        margin-right: 28px
+        position: relative
+        &:before
+          position: absolute
+          top: -7px
+    @media (min-width: 900px)
+      display: none
+    .toggle_nav
+      position: relative
+      top: 11.5px
+      width: 29px
+      height: 20px
+      margin-right: 16px
+      cursor: pointer
+      span
+        background: white
+        position: absolute
+        height: 2px
+        width: 100%
+        border-radius: 9px
+        left: 0
+        margin-top: -1px
+        transition: background 300ms 0s ease, transform 300ms 0s ease, top 300ms 0.2s ease, bottom 300ms 0.2s ease
+        &:nth-of-type(1)
+          top: 0
+        &:nth-of-type(2)
+          top: -7px
+        &:nth-of-type(3)
+          bottom: 12px
+    .effect_toggle
+      span
+        transition: background 300ms 0s ease, transform 300ms 0.2s ease, top 300ms 0s ease, bottom 300ms 0s ease
+        &:nth-of-type(1)
+          background: transparent
+        &:nth-of-type(2)
+          top: 0
+          transform: rotate(45deg)
+        &:nth-of-type(3)
+          bottom: 19px
+          transform: rotate(-45deg)
+
+  .block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .block1
+      display: flex
+      align-items: center
+      &__logo
+        display: flex
+        align-items: center
+        &:after
+          content: 'SoundResume'
+          font-family: roboto
+          font-size: 16px
+          font-weight: 300
+          line-height: 24px
+          color: white
+          transition: .4s ease
+        &:hover:after
+          color: black
+        img
+          margin: 5px 7px 5px 0
+      &__nav
+        margin-left: 140px
+        z-index: 3
+        @media (max-width: 900px)
+          position: absolute
+          left: 0
+          width: 100%
+          top: 60px
+          transition: .4s ease
+          background: $Base-blue
+          margin-left: 0
+          transform: translateX(100%)
+        ul
+          display: flex
+          @media (max-width: 900px)
+            justify-content: center
+          li
+            margin-right: 31px
+            position: relative
+            &:nth-of-type(1),&:nth-of-type(3), &:nth-of-type(2)
+              position: relative
+              &:before , &:after
+                content: ''
+                position: absolute
+                transition: .6s ease
+                bottom: 0
+                width: 0
+                height: 2px
+                background: white
+              &:before
+                left: 50%
+              &:after
+                right: 50%
+              &:hover:before
+                width: 50%
+              &:hover:after
+                width: 50%
+            .block__nav__subnav
+              display: none
+              position: absolute
+              top: 42px
+              text-align: left
+              padding: .2rem
+              background: $Base-blue
+              z-index: 3
+              @media (max-width: 900px)
+                top: 24px
+              li
+                margin: 0
+                width: 100px
+                position: relative
+                &:before , &:after
+                  content: ''
+                  position: absolute
+                  transition: .6s ease
+                  bottom: 0
+                  width: 0
+                  height: 2px
+                  background: white
+                &:before
+                  left: 50%
+                &:after
+                  right: 50%
+                &:hover:before
+                  width: 50%
+                &:hover:after
+                  width: 50%
+                a
+                  padding: 0.4rem
+            a
+              color: #ffffff
+              font-family: roboto
+              font-size: 16px
+              font-weight: 300
+              line-height: 24px
+            &:first-of-type
+              margin-right: 41px
+            &:last-of-type
+              margin-right: 0
+          .block1__nav__second
+            margin-right: 20px
+            padding-right: 52px
+            @media (max-width: 1024px)
+              cursor: default
+            i
+              content: url(img/icons/arrow.svg)
+              transition: .5s ease
+              cursor: pointer
+              position: absolute
+              left: 74px
+              top: 7px
+            .block1__nav__arrow__active
+              transform: scaleY(-1)
+      .active
+        @media (max-width: 900px)
+          transform: translateX(0%)
+    .block2
+      @media (max-width: 900px)
+        display: none
+      &__contacts
+        display: flex
+        align-items: center
+
+.swiper
+  position: relative
+  &-container
+    height: 597px
+    .swiper-wrapper
+      .swiper-slide
+        background: url("img/slider-image.jpg") no-repeat
+        background-size: 100%
+        position: relative
+        @media (max-width: 1200px)
+          background-size: unset
+        &__container
+          max-width: 970px
+          margin: 0 auto
+          padding-top: 158px
+          @media (max-width: 1024px)
+            text-align: center
+            padding: 50px 10px
+          @media (max-width: 530px)
+            text-align: left
+          h1
+            color: #fff
+            font-family: roboto
+            font-size: 42px
+            font-weight: 300
+            line-height: 60px
+            margin-bottom: 41px
+          h2
+            color: #ffffff
+            font-family: roboto
+            font-size: 18px
+            font-weight: 300
+            line-height: 28px
+            margin-bottom: 41px
+          &__button
+            color: #fff
+            font-family: roboto
+            font-size: 18px
+            font-weight: 400
+            line-height: 28px
+            border-radius: 25px
+            background-color: #e67e22
+            padding: 17px 51px
+            display: inline
+            cursor: pointer
+            transition: .4s
+            &:hover
+              background-color: darken(#e67e22, 5%)
+            @media (max-width: 1024px)
+              cursor: default
+  &__pagination
+    height: 100%
+    @media (max-width: 530px)
+      display: none
+    &__left
+      position: absolute
+      content: url("img/icons/slider-arrow.svg")
+      top: 45%
+      left: 14px
+      transform: scaleX(-1)
+      z-index: 1
+      outline: none
+    &__right
+      position: absolute
+      content: url("img/icons/slider-arrow.svg")
+      top: 45%
+      right: 14px
+      z-index: 1
+      outline: none
+    &__line__left
+      background: black
+      position: absolute
+      height: 100%
+      width: 20px
+    &__line__right
+  .mobile__pagination
+    position: relative
+    top: -24px
+    right: -50%
+    @media (min-width: 530px)
+      display: none
+main
+  padding: 55px 10px
+  .main-container
+    .block1
+      margin-bottom: 60px
+      &__content
+        p
+          color: #000000
+          font-family: roboto
+          font-size: 18px
+          font-weight: 400
+          line-height: 28px
+          margin-bottom: 16px
+          a
+            color: $Base-blue
+            position: relative
+            font-family: inherit
+            &:before
+              content: ''
+              position: absolute
+              width: 100%
+              height: 1px
+              background-color: #3498db
+              opacity: 0.3
+              bottom: 0
+          .active
+            &:before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 1px
+            background-color: transparent
+            opacity: 0.3
+            bottom: 0
+
+
+
+
+
+

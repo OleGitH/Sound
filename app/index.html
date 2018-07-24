@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.range.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+	<!-- Template Basic Images End -->
+
+	<!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
+	<style>@@include('header.min.css')</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load Fonts CSS Start -->
+	<script>
+		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+	</script>
+	<!-- Load Fonts CSS End -->
+
+	<!-- Load Custom CSS Start -->
+	<!--<Deject>--><script>loadCSS( "header.min.css?ver=1.0.0", false, "all" );</script><!--</Deject>-->
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load Custom CSS End -->
+
+	<!-- Load Custom CSS Compiled without JS Start -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/select2.min.css">
+	</noscript>
+	<!-- Load Custom CSS Compiled without JS End -->
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color End -->
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="mobile_nav">
+                    <a class="block2__contacts__elem1" target="_blank" href='https://www.facebook.com'></a>
+                    <a class="block2__contacts__elem" href="tel:+380501232233"></a>
+                    <div class="toggle_nav">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <!--mobile_nav-->
+                <div class="block">
+                    <div class="block1">
+                        <a href='#' class="block1__logo">
+                            <img src="img/icons/logo.svg" alt="Brand_logo">
+                        </a>
+                        <!--block1_logo-->
+                        <nav class="block1__nav">
+                            <ul>
+                                <li class="block1__nav__first"><a href="#">Главная</a></li>
+                                <li class="block1__nav__second">
+                                    <a href="#">Жанры
+                                    <i class="arrow"></i>
+                                    </a>
+                                    <ul class="block__nav__subnav">
+                                        <li><a href="#">Hard-Rock</a></li>
+                                        <li><a href="#">Punk</a></li>
+                                        <li><a href="#">Post-Punk</a></li>
+                                    </ul>
+                                </li>
+                                <li class="block1__nav__third"><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <!--nav-->
+                    </div>
+                    <!--block1-->
+                    <div class="block2">
+                        <div class="block2__contacts">
+                            <a class="block2__contacts__elem" href="tel:+380501232233">+38 (050) 123-22-33</a>
+                            <a class="block2__contacts__elem1" target="_blank" href='https://www.facebook.com'></a>
+                        </div>
+                    </div>
+                    <!--block2-->
+                </div>
+                <!--block-->
+            </div>
+            <!--container-->
+        </header>
+        <!--header-->
+        <div class="swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <h1>Просто лучшая студия звукозаписи
+                                "SoundResume"</h1>
+                            <h2>У нас индивидуальный подход к каждому клиенту!!!<br>
+                                Cкидки в зависимости от объёма заказов.</h2>
+                            <a href='#' class="swiper-slide__container__button">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <h1>ssss</h1>
+                            <h2>У нас индивидуальный подход к каждому клиенту!!!<br>
+                                Cкидки в зависимости от объёма заказов.</h2>
+                            <a href='#' class="swiper-slide__container__button">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider main container -->
+            <div class="swiper__pagination">
+                <div class="swiper__pagination__left"></div>
+                <div class="swiper__pagination__right"></div>
+            </div>
+            <div class="mobile__pagination">
+                    <div class="swiper-pagination">
+
+                    </div>
+            </div>
+        </div>
+        <!--swiper-->
+        <main>
+            <div class="block-container">
+                <div class="main-container">
+                    <div class="block1">
+                        <div class="block__header">
+                            <h1>О нас</h1>
+                        </div>
+                        <div class="block1__content">
+                            <p><a href="#">SoundResume</a>  – это студийный комплекс премиум-класса в историческом центре столицы. Мы уже почти 20 лет
+                               являемся востребованными профессионалами столичной звукоиндустрии.
+                            </p>
+                            <p>
+                                Студия предоставляет полный спектр услуг по производству аудиоконтента. SoundResume – это качественный
+                                звук и качественный сервис!
+                            </p>
+                        </div>
+                    </div>
+                    <!--block1-->
+                    <div class="block2">
+                        <div class="block__header">
+                            <h1>Рассчитать стоимость записи</h1>
+                        </div>
+                        <form class="block2__content" id="form" method="get">
+                            <div class="block2__content__elem1" title="Enter your name and lastname with space">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id='name' placeholder="Name Lastname" name="name" pattern="[A-Za-z]+\s[A-Za-z]+"  required>
+                            </div>
+                            <div class="block2__content__elem2">
+                                <label for="tel">Ваш телефон</label>
+                                <input type="tel" name="tel" id='tel' placeholder="+38 (___) - ___ - __ - __">
+                            </div>
+                            <div class="block2__content__elem3">
+                                <label for="range">Длительность</label>
+                                <input type="range" class="single-slider" id='range' name="range" min="0" max="10" step="0.1">
+                                <!--<p>Value: <span id="val"></span></p>-->
+                            </div>
+                            <div class="block2__content__elem4">
+                                <label for="music">Музыкальный жанр</label>
+                                <select name="music" id="music" class="custom-select" required>
+                                    <option value="" disabled selected>Выберите из списка</option>
+                                    <option value="Hard-Rock">Hard-Rock</option>
+                                    <option value="Post-Punk">Post-Punk</option>
+                                    <option value="Punk">Punk</option>
+                                </select>
+                            </div>
+                            <div class="block2__content__elem5">
+                                <p>Примерная стоимость:<span>300 грн</span></p>
+                            </div>
+                            <div class="block2__content__elem6">
+                                <input type="submit" id='submit' value="Записаться" name="submit">
+                            </div>
+                            <div class="block2__content__elem7">
+                                <label for="checkbox">Присылать доху*ще спама<span></span></label>
+                                <input type="checkbox" id='checkbox' name="checkbox" style="display: none">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--block-container-->
+        </main>
+        <!--main-->
+        <div class="tabs">
+            <div class="block-container">
+                <div class="block__header">
+                    <h1>Последние работы</h1>
+                    <ul class="block__header__tablist">
+                        <li><a href="#" class='active' data-tab="item_1">Музыка</a></li>
+                        <li><a href="#" data-tab="item_2">Клипы</a></li>
+                    </ul>
+                </div>
+                <div class="tablist">
+                    <div class="tab__item active opacity" id="item_1">
+                        <div class="card">
+                            <div class="card__img">
+
+                            </div>
+                            <div class="card__comment">
+                                <p>Запись альбома для GreenDay</p>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+
+                            </div>
+                            <div class="card__comment">
+                                <p>Запись альбома для GreenDay, заголовок
+                                    в 2 строки</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+
+                            </div>
+                            <div class="card__comment">
+                                <p>Запись альбома для GreenDay</p>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+
+                            </div>
+                            <div class="card__comment">
+                                <p>Запись альбома для GreenDay</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab__item elem2" id="item_2">
+                        <div class="card">
+                            <div class="card__img">
+
+                            </div>
+                            <div class="card__comment">
+                                <p>Запись альбома для GreenDay2</p>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+
+                            </div>
+                            <div class="card__comment">
+                                <p>Запись альбома для GreenDay, заголовок
+                                   в 2 строки2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--tablist-->
+            </div>
+
+        </div>
+        <!--tabs-->
+        <footer>
+                <div class="block-container">
+                    <div class="footer__elem">
+                        <a href="#">2018. SoundResume</a>
+                    </div>
+                </div>
+        </footer>
+        <!--footer-->
+    </div>
+    <!--wrapper-->
+
+	<!-- Optimized loading JS Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.min.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Optimized loading JS End -->
+
+</body>
+</html>

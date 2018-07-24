@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="24px" viewBox="0 0 36 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop-HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-707.000000, -498.000000)">
+        <g id="menu" transform="translate(707.000000, 498.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M1.35849057,3 L34.6415094,3 C35.3913962,3 36,2.328 36,1.5 C36,0.672 35.3913962,0 34.6415094,0 L1.35849057,0 C0.608603774,0 0,0.672 0,1.5 C0,2.328 0.608603774,3 1.35849057,3 Z" id="Shape"></path>
+            <path d="M1.35849057,14 L34.6415094,14 C35.3913962,14 36,13.328 36,12.5 C36,11.672 35.3913962,11 34.6415094,11 L1.35849057,11 C0.608603774,11 0,11.672 0,12.5 C0,13.328 0.608603774,14 1.35849057,14 Z" id="Shape"></path>
+            <path d="M1.35849057,24 L34.6415094,24 C35.3913962,24 36,23.328 36,22.5 C36,21.672 35.3913962,21 34.6415094,21 L1.35849057,21 C0.608603774,21 0,21.672 0,22.5 C0,23.328 0.608603774,24 1.35849057,24 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
